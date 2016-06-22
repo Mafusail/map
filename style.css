@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+}
+
+.navigate{
+    margin: 5% auto;
+    width: 1000px;
+    height: 500px;
+    background-image: url("./img/map_1000x500.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+
+.shadow{
+    width: 100%;
+    height:100%;
+    background: #000;
+    opacity: 0.8;
+}
+
+/*Дуги*/
+
+#canvas_abcd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
+#canvas_ba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#canvas_ca{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#canvas_da{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/*Пункты*/
+
+
+
+
+
+
+#point_y_a{
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+
+.text_pointer{
+
+    transition: 0.5s;
+}
+
+#point_y_a:hover .text_pointer{
+    color: #ffffff;
+}
+
+.text_pointer1{
+    color: transparent;
+}
+
+
+
+
+.point_a{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: yellow;
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+/*Пульсация*/
+
+/*Точка A*/
+
+.point_a:hover {
+    position: relative;
+}
+
+.point_a:hover:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -65%;
+    left: -65%;
+    height: 230%;
+    width: 230%;
+    border-radius: inherit;
+    border: inherit;
+    -webkit-animation: pulse-animation 1s infinite;
+    animation: pulse-animation 1s infinite;
+    background: yellow;
+}
+
+
+
+/*Точка B*/
+
+#point_w_b{
+    position: absolute;
+    top: 350px;
+    left: 450px;
+}
+
+
+#point_w_b:hover .text_pointer{
+    color: #ffffff;
+}
+
+.point_b{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ffffff;
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+/*Пульсация*/
+
+
+
+.point_b:hover {
+    position: relative;
+}
+
+.point_b:hover:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -65%;
+    left: -65%;
+    height: 230%;
+    width: 230%;
+    border-radius: inherit;
+    border: inherit;
+    -webkit-animation: pulse-animation 1s infinite;
+    animation: pulse-animation 1s infinite;
+    background: #ffffff;
+}
+
+
+
+/*Точка C*/
+
+#point_w_c{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+}
+
+
+#point_w_c:hover .text_pointer{
+    color: #ffffff;
+}
+
+.point_c{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ffffff;
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+/*Пульсация*/
+
+
+
+.point_c:hover {
+    position: relative;
+}
+
+.point_c:hover:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -65%;
+    left: -65%;
+    height: 230%;
+    width: 230%;
+    border-radius: inherit;
+    border: inherit;
+    -webkit-animation: pulse-animation 1s infinite;
+    animation: pulse-animation 1s infinite;
+    background: #ffffff;
+}
+
+
+
+
+
+
+/*Точка D*/
+
+#point_w_d{
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+
+
+#point_w_d:hover .text_pointer{
+    color: #ffffff;
+}
+
+.point_d{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ffffff;
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+/*Пульсация*/
+
+
+
+.point_d:hover {
+    position: relative;
+}
+
+.point_d:hover:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: -65%;
+    left: -65%;
+    height: 230%;
+    width: 230%;
+    border-radius: inherit;
+    border: inherit;
+    -webkit-animation: pulse-animation 1s infinite;
+    animation: pulse-animation 1s infinite;
+    background: #ffffff;
+}
+
+
+
+
+
+/*Пульсация анимация*/
+
+
+@-webkit-keyframes pulse-animation
+{
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;}
+    8% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;}
+    15% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 1;}
+    30% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 1;}
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;}
+}
+
+@keyframes pulse-animation
+{
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;}
+    8% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;}
+    15% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 1;}
+    30% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 1;}
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;}
+}
+
+
+
+
+
